@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 	
+	 	<meta charset="utf-8" />
+	  <title>Ce soir, c'est VOUS le Chef !</title>
+	  <meta name="description" content="Site culinaire 'Ce soir, c'est VOUS le Chef !'">
+	  <link rel="stylesheet" type="text/css" href="style/main.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<!--<-->
+		<header>
+
+			<img id="logo" alt="Logo Ce soir, c'est VOUS le Chef !" src="Ressources/Chef.png">
+
+			<div id="searchWrapper">				
+				<input id="searchBar" type="search" placeholder="Rechercher un ingrédient, appareil, ustensiles ou une recette">
+				<button><img  alt="Loupe recherche" src="Ressources/Search.png"></button>
+			</div>
+
+			<div id="taglist"></div>
+
+			<nav>
+				<div id="ingredients" class="btn menu Icolor">
+					<div class="wrapper" id="IWrapper">
+						<label id="searchI" for="searchIngredients">Ingrédients</label>
+						<input type="search" id="searchIngredients" minlength="3" placeholder="Rechercher un ingrédient">
+            <img class="Down" id="iDown" alt="dérouler menu" src="Ressources/Down.png">
+            <img class="Up" id="iUp" alt="enrouler menu" src="Ressources/Up.png">
+          </div>
+          <div class="ulWrapper">
+          	<p id="noMatchI"> Aucun ingrédient ne correspond à votre critère…
+          	</p>
+          </div>
+        </div>
+
+        <div id="appareil" class="btn menu Acolor">
+					<div class="wrapper" id="AWrapper">
+						<label id="searchA" for="searchApparels">Appareils</label>
+            <input type="search" id="searchApparels" minlength="3" placeholder="Rechercher un appareil">
+            <img class="Down" id="aDown" alt="dérouler menu" src="Ressources/Down.png">
+            <img class="Up" id="aUp" alt="enrouler menu" src="Ressources/Up.png">
+          </div>
+          <div class="ulWrapper">
+          	<p id="noMatchA"> Aucun appareil ne correspond à votre critère…
+          	</p>          	
+          </div>
+        </div>
+
+        <div id="ustensiles" class="btn menu Ucolor">
+          <div class="wrapper" id="UWrapper">
+          	<label id="searchU" for="searchUtensils">Ustensiles</label>
+            <input type="search" id="searchUtensils" minlength="3" placeholder="Rechercher un ustensile">
+            <img class="Down" id="uDown" alt="dérouler menu" src="Ressources/Down.png">
+            <img class="Up" id="uUp" alt="enrouler menu" src="Ressources/Up.png">
+          </div>
+          <div class="ulWrapper">
+          	<p id="noMatchU"> Aucun ustensile ne correspond à votre critère…
+          	</p>
+          </div>
+        </div>
+
+			</nav>
+		</header>
+
+		<main id="main-section"></main>
+		
+		<script src="Js/recipes.js"></script>		
+		<script src="Js/classRecipe.js"></script>
+    <script src="Js/sortingContent.js"></script>    
+		<script src="Js/main.js"></script>
+		
+	</body>
+</html>
