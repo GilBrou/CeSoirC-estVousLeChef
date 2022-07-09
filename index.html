@@ -3,8 +3,9 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 	
 	 	<meta charset="utf-8" />
-	  <title>Ce soir, c'est VOUS le Chef !</title>
-	  <meta name="description" content="Site culinaire 'Ce soir, c'est VOUS le Chef !'">
+	  <title>Ce soir, c'est VOUS le chef !</title>
+	  <link rel="shortcut icon" href="#">
+	  <meta name="description" content="Site culinaire 'Les Petits Plats'">
 	  <link rel="stylesheet" type="text/css" href="style/main.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +17,7 @@
 		<!--<-->
 		<header>
 
-			<img id="logo" alt="Logo Ce soir, c'est VOUS le Chef !" src="Ressources/Chef.png">
+			<img id="logo" alt="Logo Ce soir, c'est VOUS le chef !" src="Ressources/Chef.png">
 
 			<div id="searchWrapper">				
 				<input id="searchBar" type="search" placeholder="Rechercher un ingrédient, appareil, ustensiles ou une recette">
@@ -33,7 +34,7 @@
             <img class="Down" id="iDown" alt="dérouler menu" src="Ressources/Down.png">
             <img class="Up" id="iUp" alt="enrouler menu" src="Ressources/Up.png">
           </div>
-          <div class="ulWrapper">
+          <div class="ulWrapper" id="ingW">
           	<p id="noMatchI"> Aucun ingrédient ne correspond à votre critère…
           	</p>
           </div>
@@ -46,7 +47,7 @@
             <img class="Down" id="aDown" alt="dérouler menu" src="Ressources/Down.png">
             <img class="Up" id="aUp" alt="enrouler menu" src="Ressources/Up.png">
           </div>
-          <div class="ulWrapper">
+          <div class="ulWrapper" id="appW">
           	<p id="noMatchA"> Aucun appareil ne correspond à votre critère…
           	</p>          	
           </div>
@@ -59,7 +60,7 @@
             <img class="Down" id="uDown" alt="dérouler menu" src="Ressources/Down.png">
             <img class="Up" id="uUp" alt="enrouler menu" src="Ressources/Up.png">
           </div>
-          <div class="ulWrapper">
+          <div class="ulWrapper" id="usW">
           	<p id="noMatchU"> Aucun ustensile ne correspond à votre critère…
           	</p>
           </div>
@@ -68,11 +69,17 @@
 			</nav>
 		</header>
 
-		<main id="main-section"></main>
+		<main id="main-section">
+			<h2 id="errorMessage">
+				Aucune recette ne correspond à votre critère.<br>
+				Vous pouvez chercher « coulis de tomates », « poulet », etc...
+			</h2>
+		</main>
 		
 		<script src="Js/recipes.js"></script>		
 		<script src="Js/classRecipe.js"></script>
     <script src="Js/sortingContent.js"></script>    
+    <script src="Js/SearchMethod1.js"></script>  
 		<script src="Js/main.js"></script>
 		
 	</body>

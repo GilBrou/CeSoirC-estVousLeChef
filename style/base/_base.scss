@@ -1,24 +1,24 @@
 body {
-  max-width: 1300px;
-  min-width: 495px; 
+	max-width: 1300px;
+	min-width: 495px; 
   margin: auto;
-  background-color: white;
-  font-family: 'Lato', Arial, Verdana, sans-serif; /*& 'Roboto'*/
-  padding: 5px;
-  overflow-x: hidden;
+	background-color: white;
+	font-family: 'Lato', Arial, Verdana, sans-serif; /*& 'Roboto'*/
+	padding: 5px;
+	overflow-x: hidden;
 }
 
 a{
-  text-decoration: none;
-  color: black;
+	text-decoration: none;
+	color: black;
 }
 
 main{
-  width: 100%;
-  max-width: 1300px;
-  position: relative;
-  z-index: 1;
-  @include just-flex;    
+	width: 100%;
+	max-width: 1300px;
+	position: relative;
+	z-index: 1;
+	@include just-flex;    
   @include flex-wrap;
   @include justify-content-space-around;
   overflow: hidden;
